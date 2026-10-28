@@ -1,0 +1,15 @@
+title: Nono Heryana
+email: ""
+description: "Academic website of Nono Heryana | Teaching, research, publications and projects"
+url: ""
+baseurl: ""
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title/
+collections:
+  projects:
+    output: true
+    permalink: /projects/:name/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+exclude: [scripts, README.md, Gemfile.lock, vendor]

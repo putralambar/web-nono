@@ -1,0 +1,8 @@
+- name: Data Mining
+  description: Data preparation, classification, clustering, and association analysis.
+- name: Computer Networks
+  description: Network architecture, routing, security, and practical configuration.
+- name: Cloud Computing
+  description: Cloud infrastructure, deployment, and distributed services.
+- name: A/B Testing
+  description: Experimental design and evidence-based product evaluation.

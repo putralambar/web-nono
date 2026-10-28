@@ -1,0 +1,7 @@
+---
+layout: page
+title: Publications
+subtitle: Journal articles, conference papers, and other scholarly works
+permalink: /publications/
+---
+<p>Publication records are synchronized from the ORCID public API. Metadata should be checked against the publisher's authoritative record.</p><input id="pub-search" class="search" type="search" placeholder="Search by title, author, year or venue..." aria-label="Search publications"><div class="pub-list">{% assign pubs = site.data.publications | sort: 'year' | reverse %}{% for pub in pubs %}<article class="pub"><span class="pub-year">{{ pub.year }}</span><div><h3>{{ pub.title | escape }}</h3><p>{{ pub.authors | escape }}{% if pub.venue != '' %} · {{ pub.venue | escape }}{% endif %}</p>{% if pub.doi != '' %}<a class="text-link" href="https://doi.org/{{ pub.doi | escape }}" target="_blank" rel="noopener">DOI ↗</a>{% elsif pub.url != '' %}<a class="text-link" href="{{ pub.url | escape }}" target="_blank" rel="noopener">View publication ↗</a>{% endif %}</div></article>{% else %}<p>No publication records yet. Configure ORCID in the sync workflow.</p>{% endfor %}</div>
